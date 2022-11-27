@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9c6c2127b6.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background: linear-gradient(35deg, #8455d8 49.9%, #308ed1 50%) fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+        .content{
+            width: 600px;
+            height: 400px;
+            background: rgba(235, 237, 242, 0.5);
+            margin-top: 100px;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            border-radius: 30px;
+        }
+        .content input{
+            padding: 30px;
+            border: 2px dashed #8455d8;
+        }
+        .info-file ul{
+            list-style: none;
+            padding: 10px;
+            width: 400px;
+        }
+        .info-file ul li{
+            background: linear-gradient(35deg, #8455d8 49.9%, #308ed1 50%) fixed;
+            background-size: cover;
+            padding: 5px;
+            border-bottom: 2px solid #fff;
+        }
+        .info-file ul li span{
+            color : #fff;
+        }
+        .info-file ul li button{
+            border: none;
+            background: none;
+            color: #fff;
+            float: right;
+            cursor: pointer;
+        }
+        .btn-submit{
+            border: none;
+            background: linear-gradient(35deg, #8455d8 49.9%, #308ed1 50%) fixed;
+            background-size: cover;
+            padding: 5px 50px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input type="file" id="ip-file" />
+        <div class="info-file">
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="box-process">
+        </div>
+        <div class="submit">
+            <button class="btn-submit">Upload</button>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="md-info-file">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">List Image</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
